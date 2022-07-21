@@ -4,7 +4,10 @@ framework:
     #csrf_protection: true
     http_method_override: false
     trusted_proxies: '%env(TRUSTED_PROXIES)%'
-    trusted_hosts: '%env(TRUSTED_HOSTS)%'
+    trusted_hosts:
+        - https://agile-dawn-36258.herokuapp.com/
+        - localhost
+        - '%env(TRUSTED_HOSTS)%'
     # See https://caddyserver.com/docs/caddyfile/directives/reverse_proxy#headers
     trusted_headers: ['x-forwarded-for', 'x-forwarded-proto']
     serializer: { enable_annotations: true }
