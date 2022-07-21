@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% block title %}Email de Verification!{% endblock %}
+
+{% block body %}
+    {% if signedUrl %}
+        <h1>Bonjour, Votre lien d'activation de compte <a href="{{signedUrl}}">{{ signedUrl }}</a></h1>
+        <p>Ce lien expirera dans 3h</p>
+    {% endif %}
+{% endblock %}
