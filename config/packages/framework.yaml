@@ -5,7 +5,7 @@ framework:
     http_method_override: false
     trusted_proxies: '%env(TRUSTED_PROXIES)%'
     trusted_hosts:
-        - https://agile-dawn-36258.herokuapp.com/
+        - agile-dawn-36258.herokuapp.com
         - localhost
         - '%env(TRUSTED_HOSTS)%'
     # See https://caddyserver.com/docs/caddyfile/directives/reverse_proxy#headers
