@@ -47,7 +47,7 @@ class ProduitFixtures extends Fixture
             $produit->setNote($faker->numberBetween(0,5));
             $produit->setQteEnStock($faker->numberBetween(0,100));
             $produit->setDescription($faker->paragraph());
-            $produit->setCapture('https://localhost:8000/images/produits/'.$image[$faker->numberBetween(0 , count($image)-1) ]);
+            $produit->setCapture('https://agile-dawn-36258.herokuapp.com/images/produits/'.$image[$faker->numberBetween(0 , count($image)-1) ]);
             $manager->persist($produit);
 
             //On enregistre le produit dans une reference

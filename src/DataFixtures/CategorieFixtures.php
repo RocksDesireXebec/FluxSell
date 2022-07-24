@@ -42,7 +42,7 @@ class CategorieFixtures extends Fixture implements DependentFixtureInterface
             $categorie->setLibelle($faker->word());
             $categorie->setDescription($faker->paragraph());
             //On affecte des images au catégories
-            $categorie->setCapture('https://localhost:8000/images/categories/' . $image[$faker->numberBetween(0, count($image) - 1)]);
+            $categorie->setCapture('https://agile-dawn-36258.herokuapp.com/images/categories/' . $image[$faker->numberBetween(0, count($image) - 1)]);
             $manager->persist($categorie);
 
             //On enregistre les 5 categories principaux en reference
@@ -54,7 +54,7 @@ class CategorieFixtures extends Fixture implements DependentFixtureInterface
             $categorie = new Categorie();
             $categorie->setLibelle($faker->word());
             $categorie->setDescription($faker->paragraph());
-            $categorie->setCapture('https://localhost:8000/images/categories/' . $faker->imageUrl('public/images/categories', 1024, 720));
+            $categorie->setCapture('https://agile-dawn-36258.herokuapp.com/images/categories/' . $image[$faker->numberBetween(0, count($image) - 1)]);
 
             //Affectation du produit mere
             $categorieMere = $this->getReference('categorie_' . $faker->numberBetween(0, 4));
