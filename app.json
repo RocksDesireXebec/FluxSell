@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "postdeploy": "php bin/console lexik:jwt:generate-keypair --overwrite --quiet --env prod"
+  }
+}
