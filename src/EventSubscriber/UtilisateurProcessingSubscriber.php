@@ -58,7 +58,7 @@ class UtilisateurProcessingSubscriber implements EventSubscriberInterface
     
     
         $email = new TemplatedEmail();
-        $email->from('FluxSell@Corp.com');
+        $email->from('eengelbertdesire@gmail.com');
         $email->to($utilisateur->getEmail());
         $email->htmlTemplate('emails/email.html.twig');
         $email->context(['signedUrl' => $signatureComponents->getSignedUrl()]);

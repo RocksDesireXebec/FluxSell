@@ -472,6 +472,21 @@
             "./config/packages/mailer.yaml"
         ]
     },
+    "symfony/mailgun-mailer": {
+        "version": "6.0",
+        "recipe": {
+            "version": "4.4"
+        }
+    },
+    "symfony/mailjet-mailer": {
+        "version": "6.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.2",
+            "ref": "037c3256baa3334fd4cc3092a63209ae523696ff"
+        }
+    },
     "symfony/maker-bundle": {
         "version": "1.0",
         "recipe": {
@@ -610,6 +625,12 @@
     },
     "symfony/security-http": {
         "version": "v6.0.2"
+    },
+    "symfony/sendinblue-mailer": {
+        "version": "6.0",
+        "recipe": {
+            "version": "5.2"
+        }
     },
     "symfony/serializer": {
         "version": "v6.0.2"
